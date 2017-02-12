@@ -1,5 +1,4 @@
-
-package default
+package com.example
 
 package object catfood {
 
