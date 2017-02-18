@@ -10,7 +10,6 @@ lazy val catfood =
     .settings(
       libraryDependencies ++= Seq(
         library.cats,
-        library.simulacrum,
         library.scalaCheck % Test,
         library.scalaTest  % Test
       )
@@ -28,7 +27,6 @@ lazy val library =
       val scalaCheck = "1.13.4"
       val scalaTest  = "3.0.1"
     }
-    val simulacrum = "com.github.mpilquist" %% "simulacrum" % "0.10.0"
     val cats       = "org.typelevel"        %% "cats"       % Version.cats
     val catsFre    = "org.typelevel"        %% "cats-free"  % Version.cats
     val scalaCheck = "org.scalacheck"       %% "scalacheck" % Version.scalaCheck
