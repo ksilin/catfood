@@ -1,7 +1,7 @@
 package com.example.catfood.futures
 
 import cats.Applicative
-import org.scalatest.{FreeSpec, MustMatchers}
+import org.scalatest.{ FreeSpec, MustMatchers }
 import cats.implicits._
 
 import scala.util.Success
@@ -12,9 +12,8 @@ class ImplicitInstanceResolutionSpec extends FreeSpec with MustMatchers {
     F.pure(v)
 
   // F[_] <: Applicative[_]]
-  def doubleWrap[A, F[_]](v: F[A])(implicit F: Applicative[F]): F[F[A]] = {
+  def doubleWrap[A, F[_]](v: F[A])(implicit F: Applicative[F]): F[F[A]] =
     F.pure(v)
-  }
 
   "hinting at an implicit with the value type does not work" in {
     // found scala.util.Try[Int], required Option[Int]
