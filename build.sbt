@@ -24,8 +24,8 @@ lazy val library =
     object Version {
       val cats = "0.9.0"
 
-      val scalaCheck = "1.13.4"
-      val scalaTest  = "3.0.1"
+      val scalaCheck = "1.13.5"
+      val scalaTest  = "3.0.3"
     }
     val cats       = "org.typelevel"        %% "cats"       % Version.cats
     val catsFre    = "org.typelevel"        %% "cats-free"  % Version.cats
@@ -44,7 +44,7 @@ lazy val settings =
 lazy val commonSettings =
   Seq(
     // scalaVersion and crossScalaVersions from .travis.yml via sbt-travisci
-    // scalaVersion := "2.12.1",
+    // scalaVersion := "2.12.2",
     // crossScalaVersions := Seq(scalaVersion.value, "2.11.8"),
     organization := "default",
     licenses += ("Apache 2.0",

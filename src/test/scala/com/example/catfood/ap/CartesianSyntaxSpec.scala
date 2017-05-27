@@ -33,6 +33,6 @@ class CartesianSyntaxSpec extends FreeSpec with MustMatchers {
     None <* Option(1) mustBe None
   }
 
-  "contramap"
+  "contramap" in {}
 
 }
